@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+		/>
+		<title>Dr. Evelyn Reed | Executive Coach & Strategy Consultant</title>
+		<!-- Fonts & Icons -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="CSS/style.css" />
+		<link rel="icon" type="image/x-icon" href="IMG/ER.png" />
+		<script src="JS/script.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container nav-container">
+				<div class="logo">Evelyn Reed, PhD</div>
+				<button class="menu-toggle" id="menuToggle">
+					<i class="fas fa-bars"></i>
+				</button>
+				<nav class="nav-links" id="navLinks">
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#services">Services</a>
+					<a href="#testimonials">Success</a>
+					<a href="#blog">Insights</a>
+					<a href="#contact">Contact</a>
+					<button class="dark-toggle" id="darkToggle">
+						<i class="fas fa-moon"></i>
+					</button>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<!-- Hero Homepage -->
+			<section id="home" class="hero">
+				<div class="container hero-grid">
+					<div class="hero-content fade-in">
+						<h1>
+							Transform Your <span class="hero-highlight">Leadership</span> &
+							Scale Your Impact
+						</h1>
+						<p>
+							Executive coaching and strategic consulting for ambitious leaders.
+							Proven frameworks, measurable results.
+						</p>
+						<div style="display: flex; gap: 16px">
+							<button class="btn" onclick="openBookingModal()">
+								<i class="far fa-calendar-check"></i> Book a Free Session
+							</button>
+							<a href="#services" class="btn btn-outline">Explore Programs</a>
+						</div>
+						<div style="margin-top: 30px; display: flex; gap: 24px">
+							<span
+								><i
+									class="fas fa-check-circle"
+									style="color: var(--accent-blue)"
+								></i>
+								15+ Years Experience</span
+							>
+							<span
+								><i
+									class="fas fa-check-circle"
+									style="color: var(--accent-blue)"
+								></i>
+								500+ Leaders Coached</span
+							>
+						</div>
+					</div>
+					<div class="hero-image">
+						<img
+							src="IMG/Evelyn Reed.png"
+							alt="Dr. Evelyn Reed - Executive Coach"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- About Page -->
+			<section id="about" class="container" style="padding: 80px 0">
+				<h2 class="section-title">About Dr. Evelyn Reed</h2>
+				<div class="about-grid">
+					<div style="text-align: center">
+						<img
+							src="IMG/Evelyn.png"
+							style="
+								width: 100%;
+								border-radius: 30px;
+								box-shadow: var(--shadow-hover);
+							"
+							alt="Evelyn Reed portrait"
+						/>
+						<div class="about-stats">
+							<div class="stat-item"><strong>15+</strong><br />Years</div>
+							<div class="stat-item"><strong>500+</strong><br />Clients</div>
+							<div class="stat-item">
+								<strong>98%</strong><br />Satisfaction
+							</div>
+						</div>
+					</div>
+					<div>
+						<p style="font-size: 1.2rem; margin-bottom: 24px">
+							I help executives and entrepreneurs break through plateaus, build
+							high-performing teams, and create sustainable growth. My approach
+							blends behavioral science with real-world business strategy.
+						</p>
+						<h3>Credentials & Certifications</h3>
+						<ul style="list-style: none; margin: 20px 0">
+							<li>
+								<i class="fas fa-check" style="color: var(--accent-blue)"></i>
+								PhD in Organizational Psychology, Stanford
+							</li>
+							<li>
+								<i class="fas fa-check" style="color: var(--accent-blue)"></i>
+								ICF Certified Executive Coach (PCC)
+							</li>
+							<li>
+								<i class="fas fa-check" style="color: var(--accent-blue)"></i>
+								Former McKinsey Engagement Manager
+							</li>
+							<li>
+								<i class="fas fa-check" style="color: var(--accent-blue)"></i>
+								Author of "The Conscious Leader"
+							</li>
+						</ul>
+						<h3>Select Achievements</h3>
+						<p>
+							▪️ Helped 3 startups scale to acquisition ▪️ 40+ C-suite
+							placements ▪️ Keynote speaker at TEDx, SXSW
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services / Programs -->
+			<section id="services" class="container" style="padding: 60px 0">
+				<h2 class="section-title">Coaching & Consulting Programs</h2>
+				<p style="margin-bottom: 40px">
+					Tailored solutions for every stage of your leadership journey.
+				</p>
+				<div class="services-grid">
+					<div class="service-card">
+						<i
+							class="fas fa-user-graduate fa-3x"
+							style="color: var(--accent-blue)"
+						></i>
+						<h3 style="margin: 20px 0 10px">Executive 1:1 Coaching</h3>
+						<p>
+							Bi-weekly sessions, 360 assessment, personalized development plan.
+						</p>
+						<div class="service-price">
+							$1,200<span style="font-size: 1rem">/month</span>
+						</div>
+						<button class="btn" style="width: 100%" onclick="openInquiryForm()">
+							Request Info
+						</button>
+					</div>
+					<div class="service-card">
+						<i class="fas fa-users fa-3x" style="color: var(--accent-blue)"></i>
+						<h3 style="margin: 20px 0 10px">Team Accelerator</h3>
+						<p>
+							Group coaching for leadership teams, offsite facilitation, culture
+							design.
+						</p>
+						<div class="service-price">
+							$5,800<span style="font-size: 1rem">/engagement</span>
+						</div>
+						<button class="btn" style="width: 100%" onclick="openInquiryForm()">
+							Request Info
+						</button>
+					</div>
+					<div class="service-card">
+						<i
+							class="fas fa-chart-line fa-3x"
+							style="color: var(--accent-blue)"
+						></i>
+						<h3 style="margin: 20px 0 10px">Strategy Sprint</h3>
+						<p>
+							4-week intensive to clarify vision, OKRs, and execution roadmap.
+						</p>
+						<div class="service-price">$3,500</div>
+						<button class="btn" style="width: 100%" onclick="openInquiryForm()">
+							Request Info
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonials / Success Stories -->
+			<section id="testimonials" class="container" style="padding: 60px 0">
+				<h2 class="section-title">Client Success Stories</h2>
+				<div class="testimonial-grid">
+					<div class="testimonial-card">
+						<i class="fas fa-star" style="color: var(--accent-blue)"></i
+						><i class="fas fa-star"></i><i class="fas fa-star"></i
+						><i class="fas fa-star"></i><i class="fas fa-star"></i>
+						<p style="margin: 16px 0">
+							"Evelyn's coaching transformed how I lead. My team's engagement
+							scores rose 35% in six months."
+						</p>
+						<strong>— Sarah Chen, CTO at TechFlow</strong>
+					</div>
+					<div class="testimonial-card">
+						<i class="fas fa-star" style="color: var(--accent-blue)"></i
+						><i class="fas fa-star"></i><i class="fas fa-star"></i
+						><i class="fas fa-star"></i><i class="fas fa-star"></i>
+						<p>
+							"The strategy sprint gave us clarity and momentum. We closed our
+							Series B three months later."
+						</p>
+						<strong>— Marcus Webb, Founder of Luminate</strong>
+					</div>
+					<div class="testimonial-card">
+						<i class="fas fa-star" style="color: var(--accent-blue)"></i
+						><i class="fas fa-star"></i><i class="fas fa-star"></i
+						><i class="fas fa-star"></i><i class="fas fa-star"></i>
+						<p>
+							"Her insights are invaluable. I've recommended Evelyn to every
+							executive in my network."
+						</p>
+						<strong>— David Okafor, CEO, Apex Health</strong>
+					</div>
+				</div>
+			</section>
+
+			<!-- Content Hub / Blog -->
+			<section id="blog" class="container" style="padding: 60px 0">
+				<div
+					style="
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					"
+				>
+					<h2 class="section-title">Latest Insights</h2>
+					<a href="#" style="color: var(--accent-blue)">View all →</a>
+				</div>
+				<div class="blog-grid">
+					<div class="blog-card">
+						<div
+							class="blog-img"
+							style="
+								background-image: url(&quot;https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&fit=crop&quot;);
+							"
+						></div>
+						<div style="padding: 20px">
+							<h4>The Future of Leadership</h4>
+							<p>Adaptive strategies for a changing world.</p>
+							<a href="#" style="color: var(--accent-blue)">Read →</a>
+						</div>
+					</div>
+					<div class="blog-card">
+						<div
+							class="blog-img"
+							style="
+								background-image: url(&quot;https://images.unsplash.com/photo-1590650153855-d9e808231dce?w=600&fit=crop&quot;);
+							"
+						></div>
+						<div style="padding: 20px">
+							<h4>Building Trust Remotely</h4>
+							<p>Practical tools for hybrid teams.</p>
+							<a href="#" style="color: var(--accent-blue)">Listen →</a>
+						</div>
+					</div>
+					<div class="blog-card">
+						<div
+							class="blog-img"
+							style="
+								background-image: url(&quot;https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&fit=crop&quot;);
+							"
+						></div>
+						<div style="padding: 20px">
+							<h4>Decision-Making Frameworks</h4>
+							<p>Make faster, smarter choices.</p>
+							<a href="#" style="color: var(--accent-blue)">Watch →</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Lead Generation / Newsletter + Free Guide -->
+			<div class="container newsletter-box">
+				<div
+					style="
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						align-items: center;
+					"
+				>
+					<div>
+						<h3 style="color: white; font-size: 2rem">Get the Free Guide</h3>
+						<p style="color: rgba(255, 255, 255, 0.9)">
+							"5 Habits of Highly Effective Leaders" – plus monthly insights.
+						</p>
+					</div>
+					<div class="newsletter-form">
+						<input type="email" placeholder="Your work email" />
+						<button
+							class="btn"
+							style="background: white; color: var(--accent-blue)"
+							onclick="alert('Guide sent! (demo)')"
+						>
+							Download
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Booking / Contact Section -->
+			<section id="contact" class="container" style="padding: 60px 0">
+				<h2 class="section-title">Let's Connect</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px">
+					<div>
+						<h3>Schedule a discovery call</h3>
+						<p>
+							Use the calendar to find a time that works for you. Or fill out
+							the form.
+						</p>
+						<button
+							class="btn"
+							style="margin: 20px 0"
+							onclick="openBookingModal()"
+						>
+							<i class="far fa-calendar-alt"></i> Book Free Session
+						</button>
+						<p><i class="fas fa-envelope"></i> hello@evelynreed.com</p>
+						<p><i class="fas fa-phone"></i> +1 (415) 555-0198</p>
+						<p><i class="fas fa-map-pin"></i> San Francisco & Virtual</p>
+					</div>
+					<div>
+						<form
+							id="contactForm"
+							onsubmit="event.preventDefault(); alert('Thank you! I\'ll respond within 24h.');"
+						>
+							<input
+								type="text"
+								placeholder="Name"
+								style="
+									width: 100%;
+									padding: 14px;
+									margin-bottom: 16px;
+									border-radius: 40px;
+									border: 1px solid var(--gray-border);
+									background: var(--card-bg);
+									color: var(--text-primary);
+								"
+							/>
+							<input
+								type="email"
+								placeholder="Email"
+								style="
+									width: 100%;
+									padding: 14px;
+									margin-bottom: 16px;
+									border-radius: 40px;
+									border: 1px solid var(--gray-border);
+									background: var(--card-bg);
+								"
+							/>
+							<textarea
+								rows="3"
+								placeholder="How can I help?"
+								style="
+									width: 100%;
+									padding: 14px;
+									border-radius: 20px;
+									border: 1px solid var(--gray-border);
+									background: var(--card-bg);
+								"
+							></textarea>
+							<button type="submit" class="btn" style="margin-top: 16px">
+								Send Message
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Booking Modal (scheduling system simulation) -->
+		<div class="modal-overlay" id="bookingModal">
+			<div class="modal-content">
+				<span class="modal-close" onclick="closeModal('bookingModal')"
+					>&times;</span
+				>
+				<h3>Book Your Free Strategy Session</h3>
+				<p>30 minutes · Zoom · No obligation</p>
+				<form
+					onsubmit="
+						event.preventDefault()
+						alert('Booking confirmed! Check email for details.')
+						closeModal('bookingModal')
+					"
+				>
+					<input
+						type="text"
+						placeholder="Full name"
+						style="
+							width: 100%;
+							padding: 12px;
+							margin: 12px 0;
+							border-radius: 30px;
+							border: 1px solid var(--gray-border);
+							background: var(--card-bg);
+							color: var(--text-primary);
+						"
+						required
+					/>
+					<input
+						type="email"
+						placeholder="Email"
+						style="
+							width: 100%;
+							padding: 12px;
+							margin-bottom: 12px;
+							border-radius: 30px;
+							border: 1px solid var(--gray-border);
+							background: var(--card-bg);
+						"
+						required
+					/>
+					<input
+						type="date"
+						min=""
+						id="bookingDate"
+						style="
+							width: 100%;
+							padding: 12px;
+							margin-bottom: 12px;
+							border-radius: 30px;
+							border: 1px solid var(--gray-border);
+							background: var(--card-bg);
+						"
+						required
+					/>
+					<select
+						style="
+							width: 100%;
+							padding: 12px;
+							border-radius: 30px;
+							border: 1px solid var(--gray-border);
+							background: var(--card-bg);
+							color: var(--text-primary);
+						"
+					>
+						<option>9:00 AM PT</option>
+						<option>11:00 AM PT</option>
+						<option>2:00 PM PT</option>
+						<option>4:00 PM PT</option>
+					</select>
+					<button
+						type="submit"
+						class="btn"
+						style="width: 100%; margin-top: 20px"
+					>
+						Confirm Booking
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Inquiry modal for services -->
+		<div class="modal-overlay" id="inquiryModal">
+			<div class="modal-content">
+				<span class="modal-close" onclick="closeModal('inquiryModal')"
+					>&times;</span
+				>
+				<h3>Request Program Details</h3>
+				<form
+					onsubmit="event.preventDefault(); alert('Thanks! I\'ll send details shortly.'); closeModal('inquiryModal');"
+				>
+					<input
+						type="text"
+						placeholder="Name"
+						style="
+							width: 100%;
+							padding: 12px;
+							margin: 12px 0;
+							border-radius: 30px;
+						"
+						required
+					/>
+					<input
+						type="email"
+						placeholder="Email"
+						style="width: 100%; padding: 12px; margin-bottom: 12px"
+						required
+					/>
+					<select style="width: 100%; padding: 12px">
+						<option>Executive Coaching</option>
+						<option>Team Accelerator</option>
+						<option>Strategy Sprint</option>
+					</select>
+					<button
+						type="submit"
+						class="btn"
+						style="width: 100%; margin-top: 20px"
+					>
+						Send Inquiry
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<footer
+			style="
+				background: var(--bg-secondary);
+				padding: 30px 0;
+				border-top: 1px solid var(--gray-border);
+				text-align: center;
+			"
+		>
+			<div class="container">
+				<div
+					style="
+						display: flex;
+						justify-content: center;
+						gap: 30px;
+						margin-bottom: 20px;
+					"
+				>
+					<a href="#" style="color: var(--text-secondary)"
+						><i class="fab fa-linkedin fa-2x"></i
+					></a>
+					<a href="#" style="color: var(--text-secondary)"
+						><i class="fab fa-twitter fa-2x"></i
+					></a>
+					<a href="#" style="color: var(--text-secondary)"
+						><i class="fab fa-youtube fa-2x"></i
+					></a>
+				</div>
+				<p style="color: var(--text-secondary)">
+					© 2025 Evelyn Reed Consulting. All rights reserved.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
