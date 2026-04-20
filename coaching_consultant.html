@@ -343,7 +343,10 @@
 					<div>
 						<form
 							id="contactForm"
-							onsubmit="event.preventDefault(); alert('Thank you! I\'ll respond within 24h.');"
+							onsubmit="
+								event.preventDefault()
+								alert('Thank you! I\'ll respond within 24h.')
+							"
 						>
 							<input
 								type="text"
@@ -480,7 +483,11 @@
 				>
 				<h3>Request Program Details</h3>
 				<form
-					onsubmit="event.preventDefault(); alert('Thanks! I\'ll send details shortly.'); closeModal('inquiryModal');"
+					onsubmit="
+						event.preventDefault()
+						alert('Thanks! I\'ll send details shortly.')
+						closeModal('inquiryModal')
+					"
 				>
 					<input
 						type="text"
